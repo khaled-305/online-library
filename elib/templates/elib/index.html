@@ -1,0 +1,16 @@
+{% extends 'elib/base.html' %}
+
+{% block content %}
+<ul class="list-group list-group-horizontal shadow-sm">
+	<li class="list-group-item">Books <span class="badge badge-primary">{{ num_books }}</span></li>
+	<li class="list-group-item">Copies <span class="badge badge-warning">{{ num_bookinstance }}</span></li>
+	<li class="list-group-item">Copies available <span class="badge badge-success">{{ num_instances_available }}</span></li>
+	<li class="list-group-item">Authors <span class="badge badge-secondary">{{ num_authors }}</span></li>
+
+	<li class="list-group-item">Research Materials <span class="badge badge-primary">5,400</span></li>
+	<li class="list-group-item">New Books <span class="badge badge-warning">96,250</span></li>
+	<li class="list-group-item">Serial Materials <span class="badge badge-success">12,025,568</span></li>
+</ul>
+
+<p>You have visited this page {{ num_visits }} time {% if num_visits > 1 %}s{% endif %}.</p>
+{% endblock %}

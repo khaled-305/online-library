@@ -1,0 +1,13 @@
+{% extends 'elib/base.html' %}
+
+{% block content %}
+
+<div class="card shadow">
+  <div class="card-body">
+    <p><strong>Name:</strong> {{ author.first_name }}, {{ author.last_name }}</p> 
+    <p><strong>Date of Birth:</strong> {{ author.date_of_birth }}</p>
+    <p><strong>Date of Death:</strong> {{ author.date_of_death }}</p>
+  </div>
+</div>
+
+{% endblock content %}
